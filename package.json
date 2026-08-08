@@ -14,6 +14,7 @@
     "test:bootstrap": "node --test scripts/dev-bootstrap.test.mjs",
     "build": "npm run build -w server && npm run build -w cli && npm run build -w client",
     "build:server": "npm run build -w server",
+    "start": "npm run build && npm run start -w server"
     "test:migrations": "npm run test:migrations -w server",
     "desktop:dev": "npm run build -w client && npm --prefix desktop run dev",
     "desktop:dist": "npm run build -w client && npm --prefix desktop run dist",
